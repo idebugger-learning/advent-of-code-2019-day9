@@ -10,7 +10,7 @@ fn main() {
         .collect();
 
     let mut cpu = CPU::new(&program);
-    cpu.push_stdin(1);
+    cpu.push_stdin(2);
     cpu.run();
 
     println!("Output: {:?}", cpu.get_stdout());
